@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  height: 1
+  weight: 1
+  morning_insulin_to_carb_ratio: 1
+  noon_insulin_to_carb_ratio: 1
+  night_insulin_to_carb_ratio: 1
+  morning_lantus_units: 1
+  night_lantus_units: 1
+  a1c_goal: 1.5
+  weight_goal: 1
+  personal_goal: MyText
+  glucometer_brand: MyString
+  insulin_fast_acting_brand: MyString
+  insulin_long_acting_brand: MyString
+
+two:
+  height: 1
+  weight: 1
+  morning_insulin_to_carb_ratio: 1
+  noon_insulin_to_carb_ratio: 1
+  night_insulin_to_carb_ratio: 1
+  morning_lantus_units: 1
+  night_lantus_units: 1
+  a1c_goal: 1.5
+  weight_goal: 1
+  personal_goal: MyText
+  glucometer_brand: MyString
+  insulin_fast_acting_brand: MyString
+  insulin_long_acting_brand: MyString

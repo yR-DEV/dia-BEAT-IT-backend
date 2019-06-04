@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     namespace :v1 do   
       resources :users
       resources :blood_sugar_records
+      resources :diabetes_metrics 
     end 
   end
 end

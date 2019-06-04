@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_04_173639) do
+ActiveRecord::Schema.define(version: 2019_06_04_201944) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,28 @@ ActiveRecord::Schema.define(version: 2019_06_04_173639) do
     t.index ["user_id"], name: "index_blood_sugar_records_on_user_id"
   end
 
+  create_table "diabetes_metrics", force: :cascade do |t|
+    t.bigint "user_id"
+    t.integer "height"
+    t.integer "weight"
+    t.integer "blood_sugar_target_low"
+    t.integer "blood_sugar_target_high"
+    t.integer "morning_insulin_to_carb_ratio"
+    t.integer "noon_insulin_to_carb_ratio"
+    t.integer "night_insulin_to_carb_ratio"
+    t.integer "morning_lantus_units"
+    t.integer "night_lantus_units"
+    t.float "a1c_goal"
+    t.integer "weight_goal"
+    t.text "personal_goal"
+    t.string "glucometer_brand"
+    t.string "fast_insulin_brand"
+    t.string "long_insulin_brand"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_diabetes_metrics_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email"
     t.string "username"
@@ -36,4 +58,5 @@ ActiveRecord::Schema.define(version: 2019_06_04_173639) do
   end
 
   add_foreign_key "blood_sugar_records", "users"
+  add_foreign_key "diabetes_metrics", "users"
 end
