@@ -7,8 +7,8 @@
 ## Why make this?
 - I am a type 1 diabetic, meaning that some messed up homogeneous cell protiens that caused an auto-immune response that effects my endocrine horomone regulation systems. 
 - This has led to my body effectively killing off the beta cells in my pancreas that produce insulin and maintain healthy blood sugars in the normal person.  
-- Because I am a student with no income my insurance is not the best, this technology is included with many insulin pumps and analyzation of data is pretty simple, but because I can only afford single shots of insulin whenever I eat anything, I need a way to conglomerate and analyze my diabetes-data, if you will, in order to mor efficeively increase my quality of living. 
-- Hopefully I can obtain a software development position soon that will provide me with insurance that is good enough for me to afford an insulin pump, but for the time being this is my best option at efficiently and efficetively maintaining my diabetes. 
+- Because I am a student with no income my insurance is not the best, this technology is included with many insulin pumps and analyzation of data is pretty simple, but because I can only afford single shots of insulin whenever I eat anything. I need a way to conglomerate and analyze my diabetes-data, if you will, in order to mor efficeively increase my bloodsugars, health, and overall quality of living. 
+- Hopefully I can obtain a software development position soon that will provide me with insurance that is good enough for me to afford an insulin pump, but for the time being this is my best option at efficiently and efficetively maintaining my diabetes and personal health. 
 
 
 ### Setup 

@@ -17,10 +17,10 @@ ActiveRecord::Schema.define(version: 2019_06_04_173639) do
 
   create_table "blood_sugar_records", force: :cascade do |t|
     t.bigint "user_id"
-    t.integer "bloodsugar"
-    t.integer "entrytime"
+    t.integer "blood_sugar"
+    t.integer "entry_time"
     t.integer "carbs"
-    t.integer "insulinunits"
+    t.integer "insulin_units"
     t.boolean "exercise"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
