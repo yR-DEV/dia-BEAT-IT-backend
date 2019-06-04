@@ -12,7 +12,7 @@
 - This has led to my body effectively killing off the beta cells in my pancreas that produce insulin and maintain healthy blood sugars in the normal person.  
 - Because I am a student with no income my insurance is not the best, this technology is included with many insulin pumps and analyzation of data is pretty simple, but because I can only afford single shots of insulin whenever I eat anything. I need a way to conglomerate and analyze my diabetes-data, if you will, in order to mor efficeively increase my bloodsugars, health, and overall quality of living. 
 - Hopefully I can obtain a software development position soon that will provide me with insurance that is good enough for me to afford an insulin pump, but for the time being this is my best option at efficiently and efficetively maintaining my diabetes and personal health. 
-### TL;DR - Because student and am poor I cannot afford conglomeration of diabetes-data through insulin pump, have to make app myself to improve quality of life until I get junior dev job gg. 
+### TL;DR - Because student and am poor I cannot afford conglomeration of diabetes-meta-data through insulin pump (been fighting insurance for months on months to get one), have to make app myself to improve quality of life until I get junior dev job with bomb health insurance gg. 
 
 ## Technologies Used:
 - [ruby 2.6.1p33](https://www.ruby-lang.org/en/downloads/)
