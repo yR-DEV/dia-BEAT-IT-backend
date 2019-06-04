@@ -10,11 +10,22 @@
 - Because I am a student with no income my insurance is not the best, this technology is included with many insulin pumps and analyzation of data is pretty simple, but because I can only afford single shots of insulin whenever I eat anything. I need a way to conglomerate and analyze my diabetes-data, if you will, in order to mor efficeively increase my bloodsugars, health, and overall quality of living. 
 - Hopefully I can obtain a software development position soon that will provide me with insurance that is good enough for me to afford an insulin pump, but for the time being this is my best option at efficiently and efficetively maintaining my diabetes and personal health. 
 
+### Technologies Used:
+- [ruby 2.6.1p33](https://www.ruby-lang.org/en/downloads/)
+- [Rails 5.2.3](https://www.tutorialspoint.com/ruby-on-rails/rails-installation.htm)
+- [PostgreSQL 11](https://www.postgresql.org/download/)
+- ```gem active_model_serializers```
+- ```gem 'pg', '>= 0.18', '< 2.0'```
 
 ### Setup 
-* more to come here. 
+- Need to make sure that the PostgreSQL application is installed and running and then database commands:
+    - ```rails db:create```
+    - ```rails db:migrate```
+    - ```rails db:seed``` (for some dummy data. if you want to make your own records the schema for each sql table is located inside of ```./db/schema.rb```)
+- Inside of your terminal ```rails s``` will start a default server located on ```localhost:300```. 
+
 
 ### Configuration
-* more to come here about database and bundle and whatnot
+* more to come here about changing the database from development/test to deployment or something, not sure yet D:
 
 
