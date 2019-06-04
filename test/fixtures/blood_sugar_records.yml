@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  bloodsugar: 1
+  entrytime: 1
+  carbs: 1
+  insulinunits: 1
+  exercise: false
+
+two:
+  user: two
+  bloodsugar: 1
+  entrytime: 1
+  carbs: 1
+  insulinunits: 1
+  exercise: false
