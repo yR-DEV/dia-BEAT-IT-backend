@@ -18,10 +18,10 @@ ActiveRecord::Schema.define(version: 2019_06_04_201944) do
   create_table "blood_sugar_records", force: :cascade do |t|
     t.bigint "user_id"
     t.integer "blood_sugar"
-    t.integer "entry_time"
+    t.string "record_time"
+    t.string "record_date"
     t.integer "carbs"
     t.integer "insulin_units"
-    t.boolean "exercise"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_blood_sugar_records_on_user_id"
