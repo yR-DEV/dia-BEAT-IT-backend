@@ -21,15 +21,18 @@
 - [ruby 2.6.1p33](https://www.ruby-lang.org/en/downloads/)
 - [Rails 5.2.3](https://www.tutorialspoint.com/ruby-on-rails/rails-installation.htm)
 - [PostgreSQL 11](https://www.postgresql.org/download/)
-- ```gem active_model_serializers``` (for sendin data over http in STRAAANNGGSS, add to Gemfile)
-- ```gem 'pg', '>= 0.18', '< 2.0'``` (version of postgreSQL used in this project, add to Gemfile)
+- `gem active_model_serializers` (for sendin data over http in STRAAANNGGSS, add to Gemfile)
+- `gem 'pg', '>= 0.18', '< 2.0'` (version of postgreSQL used in this project, add to Gemfile)
+- `gem 'bcrypt', '~> 3.1.7'` (uncommented in gemfile resulting from create-react-app)
+- `gem 'jwt` (json web token for stateless auth!)
+- `gem 'simple_command` (helps connection between model and controller instead of model/controller and view)
 
 # Setup 
 - Need to make sure that the PostgreSQL application is installed and running and then database commands:
-    - ```rails db:create```
-    - ```rails db:migrate```
-    - ```rails db:seed``` (for some dummy data. if you want to make your own records the schema for each sql table is located inside of ```./db/schema.rb```)
-- Inside of your terminal ```rails s``` will start a local development server located at ```localhost:300```. 
+    - `rails db:create`
+    - `rails db:migrate`
+    - `rails db:seed` (for some dummy data. if you want to make your own records the schema for each sql table is located inside of `./db/schema.rb`)
+- Inside of your terminal `rails s` will start a local development server located at `localhost:300`. 
 
 
 # Configuration
