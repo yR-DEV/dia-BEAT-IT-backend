@@ -14,12 +14,30 @@ entry4 = BloodSugarRecord.create(user: user1, blood_sugar: 54, record_time: "pos
 entry5 = BloodSugarRecord.create(user: user1, blood_sugar: 345, record_time: "preDinner", record_date: '06/03/2019', carbs: 90, insulin_units: 13)
 entry6 = BloodSugarRecord.create(user: user1, blood_sugar: 234, record_time: "postDinner", record_date: '06/03/2019', carbs: 0, insulin_units: 1)
 entry7 = BloodSugarRecord.create(user: user1, blood_sugar: 89, record_time: "night", record_date: '06/03/2019', carbs: 0, insulin_units: 0)
-# entry8 = BloodSugarRecord.create(user: user1, blood_sugar: 322, record_time: "03:45", record_date: '06/03/2019', carbs: 0, insulin_units: 3)
-# entry9 = BloodSugarRecord.create(user: user1, blood_sugar: 104, record_time: "04:45", record_date: '06/03/2019', carbs: 0, insulin_units: 0)
-# entry10 = BloodSugarRecord.create(user: user1, blood_sugar: 115, record_time: "23:45", record_date: '06/03/2019', carbs: 20, insulin_units: 2)
-# entry11 = BloodSugarRecord.create(user: user1, blood_sugar: 98, record_time: "11:45", record_date: '06/04/2019', carbs: 67, insulin_units: 7)
 
+entry20 = BloodSugarRecord.create(user: user1, blood_sugar: 170, record_time: "morning", record_date: '06/05/2019', carbs: 0, insulin_units: 1)
+entry21 = BloodSugarRecord.create(user: user1, blood_sugar: 74, record_time: "preBreakfast", record_date: '06/05/2019', carbs: 35, insulin_units: 3)
+entry22 = BloodSugarRecord.create(user: user1, blood_sugar: 257, record_time: "postBreakfast", record_date: '06/05/2019', carbs: 0, insulin_units: 2)
+entry23 = BloodSugarRecord.create(user: user1, blood_sugar: 159, record_time: "preLunch", record_date: '06/05/2019', carbs: 67, insulin_units: 7)
+entry24 = BloodSugarRecord.create(user: user1, blood_sugar: 167, record_time: "postLunch", record_date: '06/05/2019', carbs: 0, insulin_units: 0)
+entry25 = BloodSugarRecord.create(user: user1, blood_sugar: 119, record_time: "preDinner", record_date: '06/05/2019', carbs: 56, insulin_units: 5)
+entry26 = BloodSugarRecord.create(user: user1, blood_sugar: 302, record_time: "postDinner", record_date: '06/05/2019', carbs: 0, insulin_units: 2)
+entry27 = BloodSugarRecord.create(user: user1, blood_sugar: 182, record_time: "night", record_date: '06/05/2019', carbs: 0, insulin_units: 0)
+
+entry10 = BloodSugarRecord.create(user: user1, blood_sugar: 89, record_time: "morning", record_date: '06/04/2019', carbs: 20, insulin_units: 2)
+entry11 = BloodSugarRecord.create(user: user1, blood_sugar: 104, record_time: "preBreakfast", record_date: '06/04/2019', carbs: 0, insulin_units: 2)
+entry12 = BloodSugarRecord.create(user: user1, blood_sugar: 245, record_time: "postBreakfast", record_date: '06/04/2019', carbs: 40, insulin_units: 4)
+entry13 = BloodSugarRecord.create(user: user1, blood_sugar: 192, record_time: "preLunch", record_date: '06/04/2019', carbs: 26, insulin_units: 3)
+entry14 = BloodSugarRecord.create(user: user1, blood_sugar: 75, record_time: "postLunch", record_date: '06/04/2019', carbs: 15, insulin_units: 0)
+entry15 = BloodSugarRecord.create(user: user1, blood_sugar: 245, record_time: "preDinner", record_date: '06/04/2019', carbs: 72, insulin_units: 8)
+entry16 = BloodSugarRecord.create(user: user1, blood_sugar: 134, record_time: "postDinner", record_date: '06/04/2019', carbs: 0, insulin_units: 1)
+entry17 = BloodSugarRecord.create(user: user1, blood_sugar: 268, record_time: "night", record_date: '06/04/2019', carbs: 0, insulin_units: 2)
+
+                   
 userState = DiabetesMetric.create(user: user1, height: 69, weight: 145, blood_sugar_target_low: 80, blood_sugar_target_high: 130, morning_insulin_to_carb_ratio: 10, noon_insulin_to_carb_ratio: 10, night_insulin_to_carb_ratio: 10, morning_lantus_units: 10, night_lantus_units: 0, a1c_goal: 7.5, weight_goal: 145, personal_goal: "to lower my a1c under 7.0 within the next year", glucometer_brand: "OneTouch", fast_insulin_brand: "Humalog", long_insulin_brand: "Lantus")
+
+
+# entry10 = BloodSugarRecord.create(user: user1, blood_sugar: 200, record_time: "night", record_date: '06/10/2019', carbs: 0, insulin_units: 1)
 
 # t.references :user, foreign_key: true
 # t.integer :blood_sugar
