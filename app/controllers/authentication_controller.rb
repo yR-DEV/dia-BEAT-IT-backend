@@ -3,7 +3,7 @@ class AuthenticationController < ApplicationController
    
     def authenticate
         command = AuthenticateUser.call(params[:email], params[:password])
-   
+        puts command
         if command.success?
             render json: { auth_token: command.result }
         else
