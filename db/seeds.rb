@@ -37,7 +37,7 @@ entry16 = BloodSugarRecord.create(user: user1, blood_sugar: 134, record_time: "p
 entry17 = BloodSugarRecord.create(user: user1, blood_sugar: 268, record_time: "night", record_date: '06/04/2019', carbs: 0, insulin_units: 2)
 
                    
-userState = DiabetesMetric.create(user: admin, user_id: 2, height: 69, weight: 145, blood_sugar_target_low: 80, blood_sugar_target_high: 130, morning_insulin_to_carb_ratio: 10, night_insulin_to_carb_ratio: 10, lantus_units: 10, a1c_goal: 7.5, personal_goal: "to lower my a1c under 7.0 within the next year")
+userState = DiabetesMetric.create(user: admin2, height: 69, weight: 145, blood_sugar_target_low: 80, blood_sugar_target_high: 130, morning_insulin_to_carb_ratio: 10, night_insulin_to_carb_ratio: 10, lantus_units: 10, a1c_goal: 7.5, personal_goal: "to lower my a1c under 7.0 within the next year")
 
 # entry10 = BloodSugarRecord.create(user: user1, blood_sugar: 200, record_time: "night", record_date: '06/10/2019', carbs: 0, insulin_units: 1)
 

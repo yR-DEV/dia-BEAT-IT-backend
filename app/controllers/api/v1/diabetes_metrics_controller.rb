@@ -45,7 +45,7 @@ class Api::V1::DiabetesMetricsController < ApplicationController
 
     def metric_params 
         params.permit(
-            :id, :user_id, :height, :weight, :blood_sugar_target_high, 
+            :id, :height, :weight, :blood_sugar_target_high, 
             :blood_sugar_target_low, :morning_insulin_to_carb_ratio,
             :night_insulin_to_carb_ratio,
             :lantus_units,
