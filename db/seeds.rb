@@ -6,6 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 user1 = User.create(username: 'YrDeV', email: 'yrdev@protonmail.com', password: 'cleverPasswordHere1!')
+admin = User.create(username: 'Q W E R T Y', email: 'yr@querty.io', password: '!@#123')
+admin2 = User.create(username: "123", email: '123', password: '123')
+
 entry0 = BloodSugarRecord.create(user: user1, blood_sugar: 145, record_time: "morning", record_date: '06/03/2019', carbs: 20, insulin_units: 2)
 entry1 = BloodSugarRecord.create(user: user1, blood_sugar: 245, record_time: "preBreakfast", record_date: '06/03/2019', carbs: 0, insulin_units: 2)
 entry2 = BloodSugarRecord.create(user: user1, blood_sugar: 165, record_time: "postBreakfast", record_date: '06/03/2019', carbs: 60, insulin_units: 6)
@@ -34,8 +37,7 @@ entry16 = BloodSugarRecord.create(user: user1, blood_sugar: 134, record_time: "p
 entry17 = BloodSugarRecord.create(user: user1, blood_sugar: 268, record_time: "night", record_date: '06/04/2019', carbs: 0, insulin_units: 2)
 
                    
-userState = DiabetesMetric.create(user: user1, height: 69, weight: 145, blood_sugar_target_low: 80, blood_sugar_target_high: 130, morning_insulin_to_carb_ratio: 10, noon_insulin_to_carb_ratio: 10, night_insulin_to_carb_ratio: 10, morning_lantus_units: 10, night_lantus_units: 0, a1c_goal: 7.5, weight_goal: 145, personal_goal: "to lower my a1c under 7.0 within the next year", glucometer_brand: "OneTouch", fast_insulin_brand: "Humalog", long_insulin_brand: "Lantus")
-
+userState = DiabetesMetric.create(user: admin, user_id: 2, height: 69, weight: 145, blood_sugar_target_low: 80, blood_sugar_target_high: 130, morning_insulin_to_carb_ratio: 10, night_insulin_to_carb_ratio: 10, lantus_units: 10, a1c_goal: 7.5, personal_goal: "to lower my a1c under 7.0 within the next year")
 
 # entry10 = BloodSugarRecord.create(user: user1, blood_sugar: 200, record_time: "night", record_date: '06/10/2019', carbs: 0, insulin_units: 1)
 

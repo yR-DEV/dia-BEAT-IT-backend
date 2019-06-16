@@ -34,16 +34,10 @@ ActiveRecord::Schema.define(version: 2019_06_04_201944) do
     t.integer "blood_sugar_target_low"
     t.integer "blood_sugar_target_high"
     t.integer "morning_insulin_to_carb_ratio"
-    t.integer "noon_insulin_to_carb_ratio"
     t.integer "night_insulin_to_carb_ratio"
-    t.integer "morning_lantus_units"
-    t.integer "night_lantus_units"
+    t.integer "lantus_units"
     t.float "a1c_goal"
-    t.integer "weight_goal"
     t.text "personal_goal"
-    t.string "glucometer_brand"
-    t.string "fast_insulin_brand"
-    t.string "long_insulin_brand"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_diabetes_metrics_on_user_id"
