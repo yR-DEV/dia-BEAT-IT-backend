@@ -24,15 +24,8 @@ class Api::V1::DiabetesMetricsController < ApplicationController
 
     def update 
         @metric = set_metric()
-        # puts 'puts set it! ````````````````'
-        # puts @metric["a1c_goal"] 
-        # puts '---------------------------------------------------'
-        # @metric.update(metric_params)
-        if @metric.update!(metric_params) 
-            render json: @metric
-        else     
-            render json: @metric.errors, status: :unprocessable_entity
-        end 
+        puts @metric["id"]
+        @metric.update(metric_params) 
     end
 
     def destroy 
@@ -48,10 +41,21 @@ class Api::V1::DiabetesMetricsController < ApplicationController
 
     def metric_params 
         params.permit(
-            :id, :height, :weight, :blood_sugar_target_high, 
+            :id, :diabetes_metric, :user_id, :height, :weight, :blood_sugar_target_high, 
             :blood_sugar_target_low, :morning_insulin_to_carb_ratio,
             :night_insulin_to_carb_ratio,
             :lantus_units,
             :a1c_goal, :personal_goal)
     end
 end
+
+# t.references :user, foreign_key: true
+# t.integer :height
+# t.integer :weight
+# t.integer :blood_sugar_target_low
+# t.integer :blood_sugar_target_high
+# t.integer :morning_insulin_to_carb_ratio
+# t.integer :night_insulin_to_carb_ratio
+# t.integer :lantus_units
+# t.float :a1c_goal
+# t.text :personal_goal

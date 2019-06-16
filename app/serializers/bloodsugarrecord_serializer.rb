@@ -1,6 +1,6 @@
 class BloodSugarRecordSerializer < ActiveModel::Serializer
   belongs_to :user
-  attributes :id, :user_id, :blood_sugar, :entry_time, :carbs, :insulin_units, :exercise
+  attributes :id, :user_id, :blood_sugar, :record_time, :record_date, :carbs, :insulin_units
 end
 
 

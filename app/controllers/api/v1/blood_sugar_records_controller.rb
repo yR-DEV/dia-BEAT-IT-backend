@@ -5,6 +5,11 @@ class Api::V1::BloodSugarRecordsController < ApplicationController
         render json: @records
     end 
 
+    def show 
+        @records = BloodSugarRecord.where(user_id: params[:id])
+        render json: @records
+    end
+
     def create 
         @record = BloodSugarRecord.create(record_params)
     end 
