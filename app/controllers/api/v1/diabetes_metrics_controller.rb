@@ -7,7 +7,9 @@ class Api::V1::DiabetesMetricsController < ApplicationController
     end 
 
     def show 
-        set_metric()
+        @metric = set_metric()
+        puts @metric
+        render json: @metric
     end
 
     def create 
@@ -22,9 +24,9 @@ class Api::V1::DiabetesMetricsController < ApplicationController
 
     def update 
         @metric = set_metric()
-        puts 'puts set it! ````````````````'
-        # puts @metric.update(metric_params) 
-        puts '---------------------------------------------------'
+        # puts 'puts set it! ````````````````'
+        # puts @metric["a1c_goal"] 
+        # puts '---------------------------------------------------'
         # @metric.update(metric_params)
         if @metric.update!(metric_params) 
             render json: @metric
@@ -40,6 +42,7 @@ class Api::V1::DiabetesMetricsController < ApplicationController
     private 
 
     def set_metric 
+        puts params[:id]
         @metric = DiabetesMetric.find_by user_id: params[:id]
     end
 
