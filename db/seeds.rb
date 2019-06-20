@@ -1,14 +1,9 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+#users
 user1 = User.create(username: 'YrDeV', email: 'yrdev@protonmail.com', password: 'cleverPasswordHere1!')
 admin = User.create(username: 'Q W E R T Y', email: 'yr@querty.io', password: '!@#123')
 admin2 = User.create(username: "123", email: '123', password: '123')
 
+#blood sugar records
 entry0 = BloodSugarRecord.create(user: admin2, blood_sugar: 145, record_time: "morning", record_date: '06/03/2019', carbs: 20, insulin_units: 2)
 entry1 = BloodSugarRecord.create(user: admin2, blood_sugar: 245, record_time: "preBreakfast", record_date: '06/03/2019', carbs: 0, insulin_units: 2)
 entry2 = BloodSugarRecord.create(user: admin2, blood_sugar: 165, record_time: "postBreakfast", record_date: '06/03/2019', carbs: 60, insulin_units: 6)
@@ -36,32 +31,25 @@ entry15 = BloodSugarRecord.create(user: admin2, blood_sugar: 245, record_time: "
 entry16 = BloodSugarRecord.create(user: admin2, blood_sugar: 134, record_time: "postDinner", record_date: '06/04/2019', carbs: 0, insulin_units: 1)
 entry17 = BloodSugarRecord.create(user: admin2, blood_sugar: 268, record_time: "night", record_date: '06/04/2019', carbs: 0, insulin_units: 2)
 
+entry10 = BloodSugarRecord.create(user: admin2, blood_sugar: 201, record_time: "morning", record_date: '06/06/2019', carbs: 10, insulin_units: 3)
+entry11 = BloodSugarRecord.create(user: admin2, blood_sugar: 190, record_time: "preBreakfast", record_date: '06/06/2019', carbs: 40, insulin_units: 1)
+entry12 = BloodSugarRecord.create(user: admin2, blood_sugar: 135, record_time: "postBreakfast", record_date: '06/06/2019', carbs: 0, insulin_units: 4)
+entry13 = BloodSugarRecord.create(user: admin2, blood_sugar: 249, record_time: "preLunch", record_date: '06/06/2019', carbs: 46, insulin_units: 3)
+entry14 = BloodSugarRecord.create(user: admin2, blood_sugar: 120, record_time: "postLunch", record_date: '06/06/2019', carbs: 25, insulin_units: 0)
+entry15 = BloodSugarRecord.create(user: admin2, blood_sugar: 123, record_time: "preDinner", record_date: '06/06/2019', carbs: 42, insulin_units: 8)
+entry16 = BloodSugarRecord.create(user: admin2, blood_sugar: 190, record_time: "postDinner", record_date: '06/06/2019', carbs: 20, insulin_units: 1)
+entry17 = BloodSugarRecord.create(user: admin2, blood_sugar: 98, record_time: "night", record_date: '06/06/2019', carbs: 6, insulin_units: 0)
+
+entry10 = BloodSugarRecord.create(user: admin2, blood_sugar: 104, record_time: "morning", record_date: '06/07/2019', carbs: 20, insulin_units: 2)
+entry11 = BloodSugarRecord.create(user: admin2, blood_sugar: 127, record_time: "preBreakfast", record_date: '06/07/2019', carbs: 0, insulin_units: 2)
+entry12 = BloodSugarRecord.create(user: admin2, blood_sugar: 312, record_time: "postBreakfast", record_date: '06/07/2019', carbs: 40, insulin_units: 4)
+entry13 = BloodSugarRecord.create(user: admin2, blood_sugar: 80, record_time: "preLunch", record_date: '06/07/2019', carbs: 26, insulin_units: 3)
+entry14 = BloodSugarRecord.create(user: admin2, blood_sugar: 190, record_time: "postLunch", record_date: '06/07/2019', carbs: 15, insulin_units: 0)
+entry15 = BloodSugarRecord.create(user: admin2, blood_sugar: 245, record_time: "preDinner", record_date: '06/07/2019', carbs: 72, insulin_units: 8)
+entry16 = BloodSugarRecord.create(user: admin2, blood_sugar: 149, record_time: "postDinner", record_date: '06/07/2019', carbs: 0, insulin_units: 1)
+entry17 = BloodSugarRecord.create(user: admin2, blood_sugar: 180, record_time: "night", record_date: '06/07/2019', carbs: 0, insulin_units: 2)
+
+#user profile settings
 userState = DiabetesMetric.create(user: user1, height: 69, weight: 145, blood_sugar_target_low: 80, blood_sugar_target_high: 130, morning_insulin_to_carb_ratio: 10, night_insulin_to_carb_ratio: 10, lantus_units: 10, a1c_goal: 7.5, personal_goal: "to lower my a1c under 7.0 within the next year")
 userState = DiabetesMetric.create(user: admin, height: 69, weight: 145, blood_sugar_target_low: 80, blood_sugar_target_high: 130, morning_insulin_to_carb_ratio: 10, night_insulin_to_carb_ratio: 10, lantus_units: 10, a1c_goal: 7.5, personal_goal: "to lower my a1c under 7.0 within the next year")                   
 userState = DiabetesMetric.create(user: admin2, height: 69, weight: 145, blood_sugar_target_low: 80, blood_sugar_target_high: 130, morning_insulin_to_carb_ratio: 10, night_insulin_to_carb_ratio: 10, lantus_units: 10, a1c_goal: 7.5, personal_goal: "to lower my a1c under 7.0 within the next year")
-
-# entry10 = BloodSugarRecord.create(user: user1, blood_sugar: 200, record_time: "night", record_date: '06/10/2019', carbs: 0, insulin_units: 1)
-
-# t.references :user, foreign_key: true
-# t.integer :blood_sugar
-# t.integer :record_time
-# t.integer :record_date
-# t.integer :carbs
-# t.integer :insulin_units
-
-
-# t.integer :height
-# t.integer :weight
-# t.integer :blood_sugar_target_low
-# t.integer :blood_sugar_target_high
-# t.integer :morning_insulin_to_carb_ratio
-# t.integer :noon_insulin_to_carb_ratio
-# t.integer :night_insulin_to_carb_ratio
-# t.integer :morning_lantus_units
-# t.integer :night_lantus_units
-# t.float :a1c_goal
-# t.integer :weight_goal
-# t.text :personal_goal
-# t.string :glucometer_brand
-# t.string :fast_insulin_brand
-# t.string :long_insulin_brand

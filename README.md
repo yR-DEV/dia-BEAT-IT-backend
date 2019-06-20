@@ -1,7 +1,9 @@
 
-# dia-BEAT-IT Readme
+# dia-BEAT-IT - backend
 
-![alt text](https://i.imgur.com/cPBt8fl.png "Type 1 Diabetes Image")
+![alt text](https://i.imgur.com/Z77UXZp.png "Landing Page Screenshot")
+![alt text](https://i.imgur.com/TM6JMl3.png "Line Charting")
+![alt text](https://i.imgur.com/WIEOWX8.png "Records Table")
 # 
 ## What is it and why the bad pun on Diabetes??
 - **dia-BEAT-IT** is an application that allows me to conglomerate data about my blood sugar (I have type 1 diabetes)
@@ -28,11 +30,13 @@
 - `gem 'simple_command` (helps connection between model and controller instead of model/controller and view)
 
 # Setup 
+- `bundle install`
 - Need to make sure that the PostgreSQL application is installed and running and then database commands:
     - `rails db:create`
     - `rails db:migrate`
     - `rails db:seed` (for some dummy data. if you want to make your own records the schema for each sql table is located inside of `./db/schema.rb`)
-- Inside of your terminal `rails s` will start a local development server located at `localhost:300`. 
+- Inside of your terminal `rails s` will start a local development server located at `localhost:3000`.
+- Access rails console and use ActiveRecord methods to interact with PG using `rails console` 
 
 
 # Configuration
