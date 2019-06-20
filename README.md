@@ -17,7 +17,7 @@
 - Because I am a student at the moment with no income, my insurance is not the best. This technology is included with many insulin pumps and analyzation of data is pretty simple, but because I can only afford single shots of insulin whenever I eat anything. I need a way to conglomerate and analyze my diabetes-data, if you will, in order to mor efficeively increase my bloodsugars, health, and overall quality of living. 
 - Hopefully I can obtain a software development position soon that will provide me with insurance that is good enough for me to afford an insulin pump, but for the time being this is my best option at efficiently and efficetively maintaining my diabetes and personal health. 
 
-### **TL;DR** - Lack of proper health insurance leaves me with a problem I had that was solved through software
+### **TL;DR** - Lack of proper health insurance leaves me with a problem I solved through software
 
 # Technologies Used:
 - [ruby 2.6.1p33](https://www.ruby-lang.org/en/downloads/)
