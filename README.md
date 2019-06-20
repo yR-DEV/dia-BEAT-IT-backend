@@ -1,23 +1,23 @@
 
 # dia-BEAT-IT - backend
 
-![alt text](https://i.imgur.com/Z77UXZp.png "Landing Page Screenshot")
-![alt text](https://i.imgur.com/TM6JMl3.png "Line Charting")
-![alt text](https://i.imgur.com/WIEOWX8.png "Records Table")
-# 
+![alt text](https://i.imgur.com/YbyLjA3.png "Landing") 
+![alt text](https://i.imgur.com/12WwOgz.png "Records Table")
+![alt text](https://i.imgur.com/0P0ZByt.png "Mapped Records")
+- FRONTEND: https://github.com/yR-DEV/dia-BEAT-IT-frontend
+
 ## What is it and why the bad pun on Diabetes??
 - **dia-BEAT-IT** is an application that allows me to conglomerate data about my blood sugar (I have type 1 diabetes)
 - It will allow me to view trends in metadata and make important and quality of life increases in my day to day life by helping me make informed decisions about my insulin (both basal and bolus as well as my 24 hour active insulin shot) rates as well as better my daily carb intake and more inform proper times throughout the day to exercise without major disruptions to my day.
-### **TL;DR** - Application with meta-blood-sugar-data will help me improve quality and efficiency with diabetes management and improve my overall quality of life.
+### **TL;DR** - See trends in bloodsugars, recognize habits/trends, adjust and improve diabetes strategy, management, and hopefully overall health.
 
 ## Why make this?
-- I am a type 1 diabetic, meaning that some messed up homogeneous cell protiens that caused an auto-immune response that effects my endocrine horomone regulation systems leaves me to artifically regulate said systems. 
-- This has led to my body effectively killing off the beta cells in my pancreas that produce insulin and maintain healthy blood sugars in the normal person.  
-- Because I am a student with no income my insurance is not the best, this technology is included with many insulin pumps and analyzation of data is pretty simple, but because I can only afford single shots of insulin whenever I eat anything. I need a way to conglomerate and analyze my diabetes-data, if you will, in order to mor efficeively increase my bloodsugars, health, and overall quality of living. 
+- I am a type 1 diabetic, meaning that some malfunctioning homogeneous cell protiens caused an auto-immune response that effects my endocrine horomone regulation systems and leaves me to artifically regulate it myself. 
+- This has led to my body effectively killing off the beta cells in my pancreas whose responsibility is to produce insulin and maintain healthy blood sugar levels in the normal person.  
+- Because I am a student at the moment with no income, my insurance is not the best. This technology is included with many insulin pumps and analyzation of data is pretty simple, but because I can only afford single shots of insulin whenever I eat anything. I need a way to conglomerate and analyze my diabetes-data, if you will, in order to mor efficeively increase my bloodsugars, health, and overall quality of living. 
 - Hopefully I can obtain a software development position soon that will provide me with insurance that is good enough for me to afford an insulin pump, but for the time being this is my best option at efficiently and efficetively maintaining my diabetes and personal health. 
-### **TL;DR** - Because student and am poor I cannot afford conglomeration of diabetes-meta-data through insulin pump firmware (been fighting insurance for months on months to get one), have to make app myself to improve quality of life until I get junior dev job with bomb health insurance gg. 
 
-## Frontend Repo: https://github.com/yeah-right/dia-BEAT-IT-frontend
+### **TL;DR** - Lack of proper health insurance leaves me with a problem I had that was solved through software
 
 # Technologies Used:
 - [ruby 2.6.1p33](https://www.ruby-lang.org/en/downloads/)

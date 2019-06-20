@@ -1,7 +1,7 @@
 #users
 user1 = User.create(username: 'YrDeV', email: 'yrdev@protonmail.com', password: 'cleverPasswordHere1!')
 admin = User.create(username: 'Q W E R T Y', email: 'yr@querty.io', password: '!@#123')
-admin2 = User.create(username: "123", email: '123', password: '123')
+admin2 = User.create(username: "1", email: '1', password: '1')
 
 #blood sugar records
 entry0 = BloodSugarRecord.create(user: admin2, blood_sugar: 145, record_time: "morning", record_date: '06/03/2019', carbs: 20, insulin_units: 2)
