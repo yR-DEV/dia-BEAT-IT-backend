@@ -19,27 +19,32 @@
 
 ### **TL;DR** - Lack of proper health insurance leaves me with a problem I solved through software
 
-# Technologies Used:
+# Backend Technologies
 - [ruby 2.6.1p33](https://www.ruby-lang.org/en/downloads/)
 - [Rails 5.2.3](https://www.tutorialspoint.com/ruby-on-rails/rails-installation.htm)
 - [PostgreSQL 11](https://www.postgresql.org/download/)
-- `gem active_model_serializers` (for sendin data over http in STRAAANNGGSS, add to Gemfile)
-- `gem 'pg', '>= 0.18', '< 2.0'` (version of postgreSQL used in this project, add to Gemfile)
+- `gem active_model_serializers` (for sendin data over http in strings, added to Gemfile)
+- `gem 'pg', '>= 0.18', '< 2.0'` (version of postgreSQL, added to Gemfile)
 - `gem 'bcrypt', '~> 3.1.7'` (uncommented in gemfile resulting from create-react-app)
-- `gem 'jwt` (json web token for stateless auth!)
+- `gem 'jwt` (json web token for stateless auth)
 - `gem 'simple_command` (helps connection between model and controller instead of model/controller and view)
 
-# Setup 
+# Frontend Technologies
+- [React 16.8, `npm install react react-router-dom`](https://reactjs.org/)
+- [Redux 4.0.0, `npm install react-redux redux-thunk`](https://redux.js.org)
+- [PostgreSQL 11.3](https://www.postgresql.org/)
+- `npm install materialize-css@next uuid lodash @nivo/line @nivo/pie`
+
+# Backend Setup 
 - `bundle install`
 - Need to make sure that the PostgreSQL application is installed and running and then database commands:
     - `rails db:create`
     - `rails db:migrate`
     - `rails db:seed` (for some dummy data. if you want to make your own records the schema for each sql table is located inside of `./db/schema.rb`)
-- Inside of your terminal `rails s` will start a local development server located at `localhost:3000`.
-- Access rails console and use ActiveRecord methods to interact with PG using `rails console` 
+- Inside of your terminal `rails server` will start a local development server located at `localhost:3000`.
+- Access rails console and use ActiveRecord locally with `rails console` 
 
-
-# Configuration
-* more to come here about changing the database from development/test to deployment or something, not sure yet D:
-
+# Frontend Setup 
+- `npm install`
+- `npm start` (to start development server)
 
